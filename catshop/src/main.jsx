@@ -8,3 +8,9 @@ createRoot(document.getElementById('root')).render(
     <App />
   </StrictMode>,
 )
+
+
+// PRODUCTS - lista map
+// Product
+// hårdkoda en array
+// axios - useEffect
