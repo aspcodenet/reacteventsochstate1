@@ -12,9 +12,9 @@ function Header(props) {
     return (
       <>
  <header className="siteheader">
-        <div class="logo">
-            <i class='bx bxs-cat logoicon'></i>
-            Cat<span class="logopart2">Lovers</span>                
+        <div className="logo">
+            <i className='bx bxs-cat logoicon'></i>
+            Cat<span className="logopart2">Lovers</span>                
         </div>
         <nav>
             <ul className="navmenu">
@@ -29,9 +29,9 @@ function Header(props) {
                 <li><a class="headeranchor" href="#contact">Contact</a></li> */}
             </ul>
         </nav>
-        <ul class="navicons">
-           <li><a class="navanchor" href="#"><i class='bx bx-search-alt navicon'></i></a></li> 
-           <li><a class="navanchor" href="#"><i class='bx bx-menu navicon' ></i></a></li> 
+        <ul className="navicons">
+           <li><a className="navanchor" href="#"><i className='bx bx-search-alt navicon'></i></a></li> 
+           <li><a className="navanchor" href="#"><i className='bx bx-menu navicon' ></i></a></li> 
         </ul>
     </header>      
       </>
