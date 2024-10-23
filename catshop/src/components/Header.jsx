@@ -2,12 +2,6 @@ import { HeaderMenuItem } from "./HeaderMenuItem"
 
 function Header(props) {
   
-
-
-    const onItemClicked = (newPage)   =>{
-        props.onItemClicked(newPage)
-    }
-
   
     return (
       <>
@@ -18,11 +12,11 @@ function Header(props) {
         </div>
         <nav>
             <ul className="navmenu">
-                <HeaderMenuItem text="Home"  onPageMenuClick={onItemClicked} activePage={props.activePage}></HeaderMenuItem>  
-                <HeaderMenuItem text="Services2" onPageMenuClick={onItemClicked}  activePage={props.activePage}></HeaderMenuItem>
-                <HeaderMenuItem text="Products" onPageMenuClick={onItemClicked}  activePage={props.activePage}></HeaderMenuItem>
-                <HeaderMenuItem text="About" onPageMenuClick={onItemClicked}  activePage={props.activePage}></HeaderMenuItem>
-                <HeaderMenuItem text="Contact" onPageMenuClick={onItemClicked}  activePage={props.activePage}></HeaderMenuItem>
+                <HeaderMenuItem text="Home"  ></HeaderMenuItem>  
+                <HeaderMenuItem text="Services2" ></HeaderMenuItem>
+                <HeaderMenuItem text="Products" ></HeaderMenuItem>
+                <HeaderMenuItem text="About" ></HeaderMenuItem>
+                <HeaderMenuItem text="Contact" ></HeaderMenuItem>
                 {/* <li><a class="headeranchor" href="#">Services</a></li>
                 <li><a class="headeranchor" href="#products">Products</a></li>
                 <li><a class="headeranchor" href="#about">About</a></li>

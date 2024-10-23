@@ -1,13 +1,16 @@
 import React from 'react'
 import { useState } from 'react'
+import { useContext } from 'react';
+import { PageContext } from './data/PageContext'
 
 export const HeaderMenuItem = (props) => {
+    const { activePage, setActivePage } = useContext(PageContext);
 
 //    let clicked = false
 
     const IWasClicked = ()   =>{
 
-        props.onPageMenuClick(props.text)
+        setActivePage(props.text)
     }
 
     return (
@@ -15,7 +18,7 @@ export const HeaderMenuItem = (props) => {
             <a 
                 onClick={ IWasClicked }
                 //className="headeranchor"
-                className={`headeranchor ${props.activePage === props.text ? 'active' : ''}`}
+                className={`headeranchor ${activePage === props.text ? 'active' : ''}`}
                 href="#">
                 { props.text }
             </a>

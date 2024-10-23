@@ -3,6 +3,7 @@ import './App.css'
 import Header from './components/Header'
 import Main from './components/Main'
 import Footer from './components/Footer'
+import { PageContext } from './components/data/PageContext'
 
 function App() {
   const [activePage, setActivePage] = useState("Home")
@@ -12,10 +13,14 @@ function App() {
 }
 
 
+
+
   return (
     <>
-      <Header activePage={activePage} onItemClicked={onItemClicked}></Header>
-      <Main activePage={activePage}></Main>
+    <PageContext.Provider value={{activePage,setActivePage}}>
+        <Header activePage={activePage} onItemClicked={onItemClicked}></Header>
+        <Main></Main>
+      </PageContext.Provider>
       <Footer></Footer>
     </>
   )
