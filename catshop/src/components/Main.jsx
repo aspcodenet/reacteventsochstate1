@@ -1,3 +1,4 @@
+import Contact from "./Contact";
 import { Home } from "./Home"
 import { Products } from "./Products"
 import { PageContext } from './data/PageContext'
@@ -12,6 +13,7 @@ function Main() {
 
 {  activePage == 'Home' && <Home></Home>}
 {  activePage == 'Products' && <Products></Products> }
+{  activePage == 'Contact' && <Contact></Contact>}
 
 
  </>
