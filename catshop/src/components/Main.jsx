@@ -3,13 +3,13 @@ import { Products } from "./Products"
 
 
 
-function Main(props) {
+function Main({activePage}) {
   
   return (
     <>
 
-{  props.activePage == 'Home' && <Home></Home>}
-{  props.activePage == 'Products' && <Products></Products> }
+{  activePage === 'Home' && <Home></Home>}
+{  activePage === 'Products' && <Products></Products> }
 
 
  </>

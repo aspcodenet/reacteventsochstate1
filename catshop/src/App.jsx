@@ -5,12 +5,15 @@ import Main from './components/Main'
 import Footer from './components/Footer'
 
 function App() {
+  //const arr = useState("Home")
+  //let activePage = "Home"
   const [activePage, setActivePage] = useState("Home")
 
   const onItemClicked = (newPage)   =>{
     setActivePage(newPage)
 }
 
+  // {activePage:"Home", onItemClicked:function() }
 
   return (
     <>

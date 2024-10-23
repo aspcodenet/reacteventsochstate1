@@ -1,14 +1,9 @@
 import { HeaderMenuItem } from "./HeaderMenuItem"
 
-function Header(props) {
+function Header({ activePage, onItemClicked}) {
   
 
 
-    const onItemClicked = (newPage)   =>{
-        props.onItemClicked(newPage)
-    }
-
-  
     return (
       <>
  <header className="siteheader">
@@ -18,11 +13,11 @@ function Header(props) {
         </div>
         <nav>
             <ul className="navmenu">
-                <HeaderMenuItem text="Home"  onPageMenuClick={onItemClicked} activePage={props.activePage}></HeaderMenuItem>  
-                <HeaderMenuItem text="Services2" onPageMenuClick={onItemClicked}  activePage={props.activePage}></HeaderMenuItem>
-                <HeaderMenuItem text="Products" onPageMenuClick={onItemClicked}  activePage={props.activePage}></HeaderMenuItem>
-                <HeaderMenuItem text="About" onPageMenuClick={onItemClicked}  activePage={props.activePage}></HeaderMenuItem>
-                <HeaderMenuItem text="Contact" onPageMenuClick={onItemClicked}  activePage={props.activePage}></HeaderMenuItem>
+                <HeaderMenuItem text="Home"  onPageMenuClick={onItemClicked} activePage={activePage}></HeaderMenuItem>  
+                <HeaderMenuItem text="Services2" onPageMenuClick={onItemClicked}  activePage={activePage}></HeaderMenuItem>
+                <HeaderMenuItem text="Products" onPageMenuClick={onItemClicked}  activePage={activePage}></HeaderMenuItem>
+                <HeaderMenuItem text="About" onPageMenuClick={onItemClicked}  activePage={activePage}></HeaderMenuItem>
+                <HeaderMenuItem text="Contact" onPageMenuClick={onItemClicked}  activePage={activePage}></HeaderMenuItem>
                 {/* <li><a class="headeranchor" href="#">Services</a></li>
                 <li><a class="headeranchor" href="#products">Products</a></li>
                 <li><a class="headeranchor" href="#about">About</a></li>

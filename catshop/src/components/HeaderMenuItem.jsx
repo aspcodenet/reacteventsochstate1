@@ -1,13 +1,13 @@
 import React from 'react'
 import { useState } from 'react'
 
-export const HeaderMenuItem = (props) => {
+export const HeaderMenuItem = ({ text,onPageMenuClick,activePage }) => {
 
 //    let clicked = false
 
     const IWasClicked = ()   =>{
 
-        props.onPageMenuClick(props.text)
+        onPageMenuClick(text)
     }
 
     return (
@@ -15,9 +15,9 @@ export const HeaderMenuItem = (props) => {
             <a 
                 onClick={ IWasClicked }
                 //className="headeranchor"
-                className={`headeranchor ${props.activePage === props.text ? 'active' : ''}`}
+                className={`headeranchor ${activePage === text ? 'active' : ''}`}
                 href="#">
-                { props.text }
+                { text }
             </a>
         </li>
       )    
