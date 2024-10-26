@@ -1,7 +1,5 @@
 import { HeaderMenuItem } from "./HeaderMenuItem"
-
-function Header({ activePage, onItemClicked}) {
-  
+function Header() {
 
 
     return (
@@ -13,11 +11,11 @@ function Header({ activePage, onItemClicked}) {
         </div>
         <nav>
             <ul className="navmenu">
-                <HeaderMenuItem text="Home"  onPageMenuClick={onItemClicked} activePage={activePage}></HeaderMenuItem>  
-                <HeaderMenuItem text="Services2" onPageMenuClick={onItemClicked}  activePage={activePage}></HeaderMenuItem>
-                <HeaderMenuItem text="Products" onPageMenuClick={onItemClicked}  activePage={activePage}></HeaderMenuItem>
-                <HeaderMenuItem text="About" onPageMenuClick={onItemClicked}  activePage={activePage}></HeaderMenuItem>
-                <HeaderMenuItem text="Contact" onPageMenuClick={onItemClicked}  activePage={activePage}></HeaderMenuItem>
+                <HeaderMenuItem text="Home"></HeaderMenuItem>  
+                <HeaderMenuItem text="Services2"></HeaderMenuItem>
+                <HeaderMenuItem text="Products"></HeaderMenuItem>
+                <HeaderMenuItem text="About"></HeaderMenuItem>
+                <HeaderMenuItem text="Contact"></HeaderMenuItem>
                 {/* <li><a class="headeranchor" href="#">Services</a></li>
                 <li><a class="headeranchor" href="#products">Products</a></li>
                 <li><a class="headeranchor" href="#about">About</a></li>

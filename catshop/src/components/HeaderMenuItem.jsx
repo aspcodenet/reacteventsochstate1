@@ -1,13 +1,15 @@
 import React from 'react'
-import { useState } from 'react'
+import { PageContext } from './data/PageContext'
+import { useContext } from 'react';
 
-export const HeaderMenuItem = ({ text,onPageMenuClick,activePage }) => {
+export const HeaderMenuItem = ({ text}) => {
+    const { activePage, setActivePage } = useContext(PageContext);
 
 //    let clicked = false
 
     const IWasClicked = ()   =>{
 
-        onPageMenuClick(text)
+        setActivePage(text)
     }
 
     return (
