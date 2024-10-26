@@ -11,11 +11,11 @@ function Header() {
         </div>
         <nav>
             <ul className="navmenu">
-                <HeaderMenuItem text="Home"></HeaderMenuItem>  
+                <HeaderMenuItem text="Home" navLink="/"></HeaderMenuItem>  
                 <HeaderMenuItem text="Services2"></HeaderMenuItem>
-                <HeaderMenuItem text="Products"></HeaderMenuItem>
+                <HeaderMenuItem text="Products" navLink="/products"></HeaderMenuItem>
                 <HeaderMenuItem text="About"></HeaderMenuItem>
-                <HeaderMenuItem text="Contact"></HeaderMenuItem>
+                <HeaderMenuItem text="Contact" navLink="/contact"></HeaderMenuItem>
                 {/* <li><a class="headeranchor" href="#">Services</a></li>
                 <li><a class="headeranchor" href="#products">Products</a></li>
                 <li><a class="headeranchor" href="#about">About</a></li>
