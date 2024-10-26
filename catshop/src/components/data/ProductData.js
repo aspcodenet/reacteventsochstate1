@@ -6,6 +6,12 @@ export const fetchProducts = async () => {
   return json.data
 }
 
+export const fetchSingleProduct = async (id) => {
+    let json = await axios.get(url+"/" + id)
+    return json.data
+  }
+  
+
 
 
 // export const products = 
